@@ -5,4 +5,9 @@ class Video {
         this.title = title;
     }
 }
+class VideoFactory {
+    public static Video createVideo(String title) {
+        return new Video(title);  // Factory creates the Video object
+    }
+}
 
