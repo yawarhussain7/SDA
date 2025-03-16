@@ -1,20 +1,22 @@
 package Principle.withPrinciple;
 class Video {
     private String title;
-    public Video(String title) {
+    private double size;
+    public Video(String title,double size) {
         this.title = title;
+        this.size = size;
     }
 }
 class VideoFactory {
-    public static Video createVideo(String title) {
-        return new Video(title);  // Factory creates the Video object
+    public static Video createVideo(String title,double size) {
+        return new Video(title,size);  // Factory creates the Video object
     }
 }
 
 public class VSM{
    
-    public Video getNewVideo(String title) {
-        return VideoFactory.createVideo(title);  // Delegation to Factory
+    public Video getNewVideo(String title,double size) {
+        return VideoFactory.createVideo(title,size);  // Delegation to Factory
     
 }
 }
