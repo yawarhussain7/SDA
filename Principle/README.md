@@ -11,3 +11,5 @@ Project: VideoStore Management System
     <li style="disc"> GRASP Creator suggests that a class that contains or closely interacts with another class should create instances of that class.</li>
     <li style="disc">This improves maintainability, reduces code duplication, and follows object-oriented principles.</li>
 </p>
+
+<p>Get more detail about it <a href="https://github.com/yawarhussain7/SDA" >Visit GitHub</a></p>
