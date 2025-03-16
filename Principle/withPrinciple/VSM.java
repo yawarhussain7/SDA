@@ -11,3 +11,10 @@ class VideoFactory {
     }
 }
 
+public class VSM{
+   
+    public Video getNewVideo(String title) {
+        return VideoFactory.createVideo(title);  // Delegation to Factory
+    
+}
+}
