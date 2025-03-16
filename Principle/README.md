@@ -13,3 +13,17 @@ Project: VideoStore Management System
 </p>
 
 <p>Get more detail about it <a href="https://github.com/yawarhussain7/SDA" >Visit GitHub</a></p>
+
+<h3>Working Process</h3>
+<ul style="list-style-type:square">With-Out-Principle</ul>
+<p>
+    In Video class there are two members:
+        title
+        size
+    which are directly accessible and changed in VMS class which voilate the working flow and dependencies efficiency etc<p>
+<ul style="list-style-type:square">With-Principle</ul>
+<p>
+    In Video class there are two members:
+        title
+        size
+    which are properly managed and modified by Video Factory class<p>
