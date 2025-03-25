@@ -17,5 +17,14 @@ public class Demo {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        EventManager eventmanager = new EventManager("sms");
+        SMSSupportListener sms = new SMSSupportListener("+92034384383843");
+
+        eventmanager.subscribe("sms", sms);
+        eventmanager.notify("sms", "This is short message testing");
+        eventmanager.notify("sms",
+                "This is exceding testing the process of using or trying something to see if it works, is suitable, obeys the rules, etc.");
+
     }
 }
