@@ -1,6 +1,8 @@
 package eventsmanagement;
 
+import java.io.File;
 import java.util.*;
+import eventsmanagement.EventListener;
 
 public class EventManager {
     private Map<String, List<EventListener>> listeners = new HashMap<>();
@@ -26,5 +28,10 @@ public class EventManager {
         for (EventListener listener : users) {
             listener.update(eventType, message);
         }
+    }
+
+    public void notify(String eventType, File file) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'notify'");
     }
 }
